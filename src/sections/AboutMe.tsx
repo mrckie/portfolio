@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 
 const AboutMe = () => {
 	return (
-		<section className='flex flex-col items-start gap-y-7 h-screen py-20'>
+		<section className='flex flex-col items-start gap-y-7 py-20'>
 			<div className='flex flex-col gap-y-3'>
 				<h1 className='text-2xl font-bold'>
 					Hi, I’m Mark Jefferson Saldaña  — Web Developer
