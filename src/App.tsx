@@ -1,10 +1,13 @@
-import './App.css'
+import './index.css'
+import AboutMe from './sections/Header'
+import { ThemeProvider } from './components/theme-provider'
+
 
 function App() {
   return (
-    <>
-      <p className='text-red-500'>nigga</p>
-    </>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <AboutMe />
+    </ThemeProvider>
   )
 }
 
