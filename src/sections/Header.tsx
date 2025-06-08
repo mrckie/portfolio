@@ -16,7 +16,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   return (
 
-    <div className="w-full bg-transparent sticky top-0 z-50 border-b py-3 px-4">
+    <div className="w-full bg-transparent sticky top-0 z-50 border-b py-3">
 
       {/* mobile view */}
       <div className="md:hidden flex items-center justify-between">
