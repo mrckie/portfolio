@@ -12,7 +12,8 @@ import { FaJs } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
-
+import { IoLogoFigma } from "react-icons/io5";
+import { GrMysql } from "react-icons/gr";
 
 const techStack = [
 	{
@@ -58,6 +59,14 @@ const techStack = [
 	{
 		name: "CSS3",
 		icon: <SiCss3 className="size-6 text-[#1572B6]" />,
+	},
+	{
+		name: "Figma",
+		icon: <IoLogoFigma className="size-6" color="#A259FF" />,
+	},
+	{
+		name: "MySQL",
+		icon: <GrMysql className="size-6" color="#4479A1" />,
 	},
 ];
 

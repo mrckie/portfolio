@@ -1,11 +1,27 @@
+import { Particles } from '@/components/magicui/particles';
+import { useTheme } from '@/components/theme-provider';
 import { Button } from '@/components/ui/button';
+import { useEffect, useState } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 const AboutMe = () => {
+	const { theme, setTheme } = useTheme();
+	const [color, setColor] = useState("#ffffff");
+
+	useEffect(() => {
+		setColor(theme === "dark" ? "#ffffff" : "#000000");
+	}, [setTheme]);
 	return (
 		<section className='flex flex-col items-start gap-y-7 py-20'>
+			<Particles
+				className="absolute inset-0 z-0"
+				quantity={30}
+				ease={80}
+				refresh
+				color={color}
+			/>
 			<div className='flex flex-col gap-y-3'>
 				<h1 className='text-2xl font-bold'>
 					Hi, I’m Mark Jefferson Saldaña  — Web Developer
