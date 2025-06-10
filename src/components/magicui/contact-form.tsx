@@ -14,7 +14,6 @@ import { Textarea } from "../ui/textarea";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiMessageSquare } from "react-icons/fi";
 import { MdPersonOutline } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
 
 export function ContactForm({ button }: { button: React.ReactNode }) {
 	return (
