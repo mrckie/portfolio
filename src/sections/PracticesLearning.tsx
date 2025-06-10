@@ -27,6 +27,14 @@ const slugs = [
 	"github",
 	"figma",
 	"vuedotjs",
+	"mcdonalds",
+	'burgerking',
+	'adidas',
+	'puma',
+	"starbucks",
+	"tesla",
+	"jordan",
+	"nasa"
 ];
 
 

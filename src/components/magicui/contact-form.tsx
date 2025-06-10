@@ -14,6 +14,7 @@ import { Textarea } from "../ui/textarea";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiMessageSquare } from "react-icons/fi";
 import { MdPersonOutline } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
 
 export function ContactForm({ button }: { button: React.ReactNode }) {
 	return (
@@ -33,20 +34,29 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 					<div className="flex flex-col gap-y-6">
 						<div className="relative flex items-center w-full ">
 							<MdPersonOutline className="absolute left-3 flex items-center justify-center size-5.5" />
-							<Input className="pl-10 text-sm md:text-balance" name="name" type="text" placeholder="Name" />
+							<Input required className="pl-10 text-sm md:text-balance" name="name" type="text" placeholder="Name" />
 						</div>
 						<div className="relative flex items-center w-full ">
 							<MdOutlineEmail className="absolute left-3 flex items-center justify-center size-4.5" />
-							<Input className="pl-10 text-sm md:text-balance" name="email" type="email" placeholder="Email" />
+							<Input required className="pl-10 text-sm md:text-balance" name="email" type="email" placeholder="Email" />
 						</div>
 						<div className="relative flex items-center w-full">
 							<FiMessageSquare className="absolute left-3 top-3 flex items-center justify-center size-4.5" />
-							<Textarea className="h-25 pl-10 text-sm md:text-balance" name="message" placeholder="Type your message" />
+							<Textarea required className="h-25 pl-10 text-sm md:text-balance" name="message" placeholder="Type your message" />
 						</div>
 					</div>
 
 					<DialogFooter>
-						<Button className="cursor-pointer " type="submit">Send Message</Button>
+						<Button className="cursor-pointer " type="submit">
+							<a
+								href='https://www.facebook.com/profile.php?id=61574225763548'
+								target='_blank'
+								rel='noopener noreferrer'
+								aria-label='GitHub'
+							>
+								Send Message
+							</a>
+						</Button>
 					</DialogFooter>
 				</DialogContent>
 			</form>
