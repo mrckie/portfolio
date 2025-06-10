@@ -14,6 +14,8 @@ import { FaHtml5 } from "react-icons/fa";
 import { SiCss3 } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
+import { SiShadcnui } from "react-icons/si";
+import { SiMariadb } from "react-icons/si";
 
 const techStack = [
 	{
@@ -62,12 +64,21 @@ const techStack = [
 	},
 	{
 		name: "Figma",
-		icon: <IoLogoFigma className="size-6" color="#A259FF" />,
+		icon: <IoLogoFigma className="size-6 text-[#A259FF]" />,
 	},
 	{
 		name: "MySQL",
-		icon: <GrMysql className="size-6" color="#4479A1" />,
+		icon: <GrMysql className="size-6 text-[#4479A1]" />,
 	},
+	{
+		name: "MariaDB",
+		icon: <SiMariadb className="size-6 text-[#003545]" />,
+	},
+	{
+		name: "Shadcn",
+		icon: <SiShadcnui className="size-6 text-[#F7F7F7]" />,
+	}
+
 ];
 
 const middleIndex = Math.ceil(techStack.length / 2);
@@ -106,15 +117,15 @@ const TechStackCard = ({
 
 const TechStack = () => {
 	return (
-		<section className="flex flex-col items-start gap-y-7">
+		<section className="flex flex-col items-start gap-y-12">
 			<h1 className='text-xl font-semibold'>Technology Stack</h1>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-5 overflow-hidden">
-				<Marquee pauseOnHover className="[--duration:20s]">
+				<Marquee pauseOnHover>
 					{firstRow.map((review) => (
 						<TechStackCard key={review.name} {...review} />
 					))}
 				</Marquee>
-				<Marquee reverse pauseOnHover className="[--duration:20s]">
+				<Marquee reverse pauseOnHover>
 					{secondRow.map((review) => (
 						<TechStackCard key={review.name} {...review} />
 					))}

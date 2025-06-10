@@ -14,7 +14,7 @@ const AboutMe = () => {
 		setColor(theme === "dark" ? "#ffffff" : "#000000");
 	}, [setTheme]);
 	return (
-		<section className='flex flex-col items-start gap-y-7 py-20'>
+		<section className='flex flex-col items-start gap-y-7'>
 			<Particles
 				className="absolute inset-0 z-0"
 				quantity={30}
@@ -24,10 +24,10 @@ const AboutMe = () => {
 			/>
 			<div className='flex flex-col gap-y-3'>
 				<h1 className='text-2xl font-bold'>
-					Hi, I’m Mark Jefferson Saldaña  — Web Developer
+					Hi, I’m Mark Jefferson Saldaña  — Passionate Full-Stack Web Developer
 				</h1>
 				<p className='text-zinc-500'>
-					From frontend UI to backend logic, I develop full-stack applications using modern technologies following clean code standards, modular architecture, and modern development principles.
+					Currently studying Computer Science while building real-world web apps with Laravel, React, Inertia.js and Tailwind CSS. I apply best practices and modern tooling to every project I create.
 				</p>
 			</div>
 			<div className='flex items-center gap-x-4'>
