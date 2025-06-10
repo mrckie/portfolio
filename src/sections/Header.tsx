@@ -46,9 +46,23 @@ const Header = () => {
         </button>
       </div>
 
-      {/* desktop view */}
-      <div className="flex items-center justify-between">
-
+      {/* 768px view */}
+      <div className="md:flex items-center justify-between">
+        <RainbowButton variant='outline' className="text-md p-4">Mark Jefferson E. Saldaña</RainbowButton>
+        <div className="md:flex items-center gap-x-6">
+          <ShimmerButton shimmerSize="0.1em" className="text-md px-4 py-2 dark:text-white">Contact Me</ShimmerButton>
+          <button className="cursor-pointer hover:bg-zinc-100/30  rounded-lg p-1"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
+            {
+              theme === 'dark' ? (
+                <RiMoonClearLine className="size-6 text-white" />
+              ) : (
+                <IoSunnyOutline className="size-6" />
+              )
+            }
+          </button>
+        </div>
       </div>
     </div >
   )

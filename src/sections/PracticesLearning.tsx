@@ -1,4 +1,3 @@
-import { AnimatedList } from "@/components/magicui/animated-list";
 import { IconCloud } from "@/components/magicui/icon-cloud";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Marquee } from "@/components/magicui/marquee";
@@ -100,7 +99,7 @@ const PracticesLearning = () => {
 		<section className="flex flex-col items-start gap-y-14">
 			<h1 className='text-xl font-semibold'>How I Code & What I'm Learning</h1>
 			<MagicCard>
-				<div className="px-4 py-7 flex flex-col items-center gap-y-7">
+				<div className="px-4 py-7 flex flex-col items-center gap-y-8">
 					<h1 className="font-medium text-center">My Development Practices</h1>
 					<div
 						className={cn(
@@ -126,7 +125,7 @@ const PracticesLearning = () => {
 			</div>
 
 			<MagicCard>
-				<div className="px-4 py-7 flex flex-col items-center gap-y-7">
+				<div className="px-4 py-7 flex flex-col items-center gap-y-8">
 					<h1 className="font-medium text-center">
 						My Developer Journey
 					</h1>
