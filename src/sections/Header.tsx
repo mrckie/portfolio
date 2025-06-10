@@ -16,9 +16,9 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   return (
 
-    <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7">
+    <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7 lg:px-10">
 
-      {/* mobile view */}
+      {/* mobile breakpoint */}
       <div className="md:hidden flex items-center justify-between">
         <Sheet>
           <SheetTrigger >
@@ -46,12 +46,12 @@ const Header = () => {
         </button>
       </div>
 
-      {/* 768px view */}
+      {/* 768px-above breakpoint */}
       <div className="md:flex items-center justify-between hidden">
         <RainbowButton variant='outline' className="md:text-sm p-4">Mark Jefferson E. Saldaña</RainbowButton>
         <div className="md:flex items-center gap-x-6">
           <ShimmerButton shimmerSize="0.1em" className="md:text-sm px-4 py-2 dark:text-white">Contact Me</ShimmerButton>
-          <button className="cursor-pointer hover:bg-zinc-100/30  rounded-lg p-1"
+          <button className="cursor-pointer dark:hover:bg-zinc-100/30 hover:bg-zinc-800/20  rounded-lg p-1"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
           >
             {

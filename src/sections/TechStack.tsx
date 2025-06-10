@@ -20,63 +20,63 @@ import { SiMariadb } from "react-icons/si";
 const techStack = [
 	{
 		name: "Laravel",
-		icon: <FaLaravel className="size-6 text-[#FF2D20]" />,
+		icon: <FaLaravel className="size-6 lg:size-7 text-[#FF2D20]" />,
 	},
 	{
 		name: "React",
-		icon: <FaReact className="size-6 text-[#61DAFB]" />,
+		icon: <FaReact className="size-6 lg:size-7 text-[#61DAFB]" />,
 	},
 	{
 		name: "Tailwind",
-		icon: <RiTailwindCssFill className="size-6 text-[#06B6D4]" />,
+		icon: <RiTailwindCssFill className="size-6 lg:size-7 text-[#06B6D4]" />,
 	},
 	{
 		name: "Inertia.js",
-		icon: <SiInertia className="size-6 text-[#b2b6ff]" />,
+		icon: <SiInertia className="size-6 lg:size-7 text-[#b2b6ff]" />,
 	},
 	{
 		name: "Vite ",
-		icon: <TbBrandVite className="size-6 text-[#f96dcd]" />,
+		icon: <TbBrandVite className="size-6 lg:size-7 text-[#f96dcd]" />,
 	},
 	{
 		name: "Php ",
-		icon: <SiPhp className="size-6 text-[#777BB4]" />,
+		icon: <SiPhp className="size-6 lg:size-7 text-[#777BB4]" />,
 	},
 	{
 		name: "Typescript",
-		icon: <SiTypescript className="size-6 text-[#3178C6]" />,
+		icon: <SiTypescript className="size-6 lg:size-7 text-[#3178C6]" />,
 	},
 	{
 		name: "JavaScript",
-		icon: <FaJs className="size-6 text-[#F7DF1E]" />,
+		icon: <FaJs className="size-6 lg:size-7 text-[#F7DF1E]" />,
 	},
 	{
 		name: "GitHub",
-		icon: <FaGithub className="size-6 text-[#0b0b0b]" />,
+		icon: <FaGithub className="size-6 lg:size-7 text-[#0b0b0b]" />,
 	},
 	{
 		name: "HTML5",
-		icon: <FaHtml5 className="size-6 text-[#E34F26]" />,
+		icon: <FaHtml5 className="size-6 lg:size-7 text-[#E34F26]" />,
 	},
 	{
 		name: "CSS3",
-		icon: <SiCss3 className="size-6 text-[#1572B6]" />,
+		icon: <SiCss3 className="size-6 lg:size-7 text-[#1572B6]" />,
 	},
 	{
 		name: "Figma",
-		icon: <IoLogoFigma className="size-6 text-[#A259FF]" />,
+		icon: <IoLogoFigma className="size-6 lg:size-7 text-[#A259FF]" />,
 	},
 	{
 		name: "MySQL",
-		icon: <GrMysql className="size-6 text-[#4479A1]" />,
+		icon: <GrMysql className="size-6 lg:size-7 text-[#4479A1]" />,
 	},
 	{
 		name: "MariaDB",
-		icon: <SiMariadb className="size-6 text-[#003545]" />,
+		icon: <SiMariadb className="size-6 lg:size-7 text-[#004e65]" />,
 	},
 	{
 		name: "Shadcn",
-		icon: <SiShadcnui className="size-6 text-[#F7F7F7]" />,
+		icon: <SiShadcnui className="size-6 lg:size-7 text-[#F7F7F7]" />,
 	}
 
 ];
@@ -95,7 +95,7 @@ const TechStackCard = ({
 	return (
 		<figure
 			className={cn(
-				"relative h-full w-20 cursor-pointer overflow-hidden rounded-xl border p-3",
+				"relative h-full w-20 lg:w-25 cursor-pointer overflow-hidden rounded-xl border p-3",
 				// light styles
 				"border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
 				// dark styles
@@ -105,7 +105,7 @@ const TechStackCard = ({
 			<div className="flex flex-col justify-center items-center gap-y-4">
 				<span className="rounded-full">{icon}</span>
 				<div className="flex flex-col">
-					<figcaption className="text-xs font-medium dark:text-white">
+					<figcaption className="text-xs font-medium  dark:text-white">
 						{name}
 					</figcaption>
 				</div>
@@ -117,8 +117,8 @@ const TechStackCard = ({
 
 const TechStack = () => {
 	return (
-		<section className="flex flex-col items-start gap-y-12">
-			<h1 className='text-xl font-semibold'>Technology Stack</h1>
+		<section className="flex flex-col items-start gap-y-14 lg:gap-y-20">
+			<h1 className='text-xl font-semibold lg:text-2xl lg:font-bold'>Technology Stack</h1>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-5 overflow-hidden">
 				<Marquee pauseOnHover>
 					{firstRow.map((review) => (
