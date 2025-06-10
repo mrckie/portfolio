@@ -2,8 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import React, {
-  ComponentPropsWithoutRef,
+import  React,  {
+  type ComponentPropsWithoutRef,
   useEffect,
   useMemo,
   useState,
