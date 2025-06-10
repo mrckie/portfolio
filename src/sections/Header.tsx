@@ -12,13 +12,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { ContactForm } from "@/components/magicui/contact-form";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
   return (
 
     <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7 lg:px-10">
-
+      <ScrollProgress className="md:top-[61px] top-[52px]" />
       {/* 320px breakpoint */}
       <div className="md:hidden flex items-center justify-between">
         <Sheet>
