@@ -59,8 +59,8 @@ const practices = [
 		item: "Continuous Learning & Improvement",
 		icon: "📚",
 	},
-	
-	
+
+
 ];
 
 const PracticesLearning = () => {
@@ -70,7 +70,7 @@ const PracticesLearning = () => {
 		return (
 			<figure
 				className={cn(
-					"relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl p-4",
+					"relative max-w-md mx-auto w-full cursor-pointer overflow-hidden rounded-2xl p-4",
 					// animation styles
 					"transition-all duration-200 ease-in-out hover:scale-[103%]",
 					// light styles
@@ -83,7 +83,7 @@ const PracticesLearning = () => {
 					{icon}
 					<div className="flex flex-col overflow-hidden">
 						<figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-							<span className="text-xs text-wrap sm:text-lg">{item}</span>
+							<span className="text-sm text-wrap md:text-base">{item}</span>
 						</figcaption>
 					</div>
 				</div>
@@ -98,9 +98,9 @@ const PracticesLearning = () => {
 	return (
 		<section className="flex flex-col items-start gap-y-14">
 			<h1 className='text-xl font-semibold'>How I Code & What I'm Learning</h1>
-			<MagicCard>
+			<MagicCard className="w-full">
 				<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-					<h1 className="font-medium text-center">My Development Practices</h1>
+					<h1 className="md:text-lg md:font-semibold font-medium text-center">My Development Practices</h1>
 					<div
 						className={cn(
 							"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
@@ -117,7 +117,7 @@ const PracticesLearning = () => {
 			</MagicCard>
 
 			<div className="px-4 py-7 flex flex-col items-center gap-y-4 size-full justify-center overflow-hidden">
-				<h1 className="font-medium text-center">
+				<h1 className="font-medium text-center md:text-lg md:font-semibold">
 					Currently Exploring and Learning
 				</h1>
 
@@ -126,13 +126,13 @@ const PracticesLearning = () => {
 
 			<MagicCard>
 				<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-					<h1 className="font-medium text-center">
+					<h1 className="md:text-lg md:font-semibold font-medium text-center">
 						My Developer Journey
 					</h1>
 
 					<div className="flex flex-row gap-x-4">
 						<span className="border-2"></span>
-						<article className="text-zinc-500 text-sm ">
+						<article className="text-zinc-500 text-sm md:text-base">
 							As a computer science student and aspiring full-stack developer, I’m constantly learning and refining my skills — not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
 							<br />
 							<br />

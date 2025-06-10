@@ -23,7 +23,7 @@ const AboutMe = () => {
 				color={color}
 			/>
 			<div className='flex flex-col gap-y-3'>
-				<h1 className='text-2xl font-bold'>
+				<h1 className='text-2xl md:text-3xl font-bold'>
 					Hi, I’m Mark Jefferson Saldaña  — Passionate Full-Stack Web Developer
 				</h1>
 				<p className='text-zinc-500'>
