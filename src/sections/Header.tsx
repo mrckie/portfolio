@@ -31,7 +31,9 @@ const Header = () => {
                 <RainbowButton variant='outline' className="text-sm p-2">Mark Jefferson E. Saldaña</RainbowButton>
                 <ContactForm
                   button={
-                    <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 dark:text-white">Contact Me</ShimmerButton>
+                    <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 dark:text-white">
+                      Contact Me
+                    </ShimmerButton>
                   }
                 />
               </SheetTitle>
@@ -57,7 +59,9 @@ const Header = () => {
         <div className="md:flex items-center gap-x-6">
           <ContactForm
             button={
-              <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 md:py-2 md:px-4 dark:text-white">Contact Me</ShimmerButton>
+              <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 md:py-2 md:px-4 dark:text-white">
+                Contact Me
+              </ShimmerButton>
             }
           />
           <button className="cursor-pointer dark:hover:bg-zinc-100/30 hover:bg-zinc-800/20  rounded-lg p-1"

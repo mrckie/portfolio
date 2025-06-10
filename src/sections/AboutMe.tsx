@@ -38,7 +38,7 @@ const AboutMe = () => {
 				<span className='lg:w-125 md:w-80'>
 				</span>
 			</div>
-			<div className='flex items-center gap-x-4'>
+			<div className='flex items-center gap-x-4 md:gap-x-6'>
 				<ContactForm button={
 					<Button className='cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
 						<IoMdMail />

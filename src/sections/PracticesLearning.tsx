@@ -2,7 +2,6 @@ import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import { IconCloud } from "@/components/magicui/icon-cloud";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Marquee } from "@/components/magicui/marquee";
-import { ShineBorder } from "@/components/magicui/shine-border";
 import { cn } from "@/lib/utils";
 
 
