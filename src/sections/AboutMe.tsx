@@ -23,8 +23,8 @@ const AboutMe = () => {
 		<section className='flex flex-col items-start gap-y-7 lg:gap-y-10'>
 			<Particles
 				className="absolute inset-0 z-0"
-				quantity={40}
-				ease={80}
+				quantity={100}
+				ease={90}
 				refresh
 				color={color}
 			/>
@@ -49,7 +49,7 @@ const AboutMe = () => {
 
 				<Button className='px-3 cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
 					<a
-						href='https://www.xvideos2.com/new/1'
+						href='https://github.com/mrckie'
 						target='_blank'
 						rel='noopener noreferrer'
 						aria-label='GitHub'
@@ -59,7 +59,7 @@ const AboutMe = () => {
 				</Button>
 				<Button className='px-3 cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
 					<a
-						href="https://music.youtube.com/watch?v=4obPTNkYbgc"
+						href="https://www.facebook.com/mark.jfrsn"
 						target='_blank'
 						rel='noopener noreferrer'
 						aria-label='Facebook'

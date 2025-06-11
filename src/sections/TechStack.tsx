@@ -116,8 +116,10 @@ const TechStackCard = ({
 
 
 const TechStack = () => {
+
 	return (
 		<section className="flex flex-col items-start gap-y-14 lg:gap-y-20">
+
 			<h1 className='text-xl font-semibold lg:text-2xl lg:font-bold'>Technology Stack</h1>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-5 overflow-hidden">
 				<Marquee pauseOnHover>

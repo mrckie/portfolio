@@ -10,7 +10,6 @@ const slugs = [
 	"nodedotjs",
 	"express",
 	"nextdotjs",
-	"amazonaws",
 	"graphql",
 	"shadcnui",
 	"zod",
@@ -27,14 +26,6 @@ const slugs = [
 	"github",
 	"figma",
 	"vuedotjs",
-	"mcdonalds",
-	'burgerking',
-	'adidas',
-	'puma',
-	"starbucks",
-	"tesla",
-	"jordan",
-	"nasa"
 ];
 
 
@@ -106,8 +97,10 @@ const PracticesLearning = () => {
 
 	return (
 		<>
+
 			{/* 640px-768px breakpoint */}
 			<section className="flex flex-col items-start gap-y-14 lg:hidden">
+
 				<h1 className='text-xl font-semibold lg:text-2xl lg:font-bold'>How I Code & What I'm Learning</h1>
 				<MagicCard className="w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
@@ -155,7 +148,7 @@ const PracticesLearning = () => {
 			</section>
 
 			{/* 1024px breakpoint */}
-			<section className="max-lg:hidden flex flex-col justify-center gap-y-20">
+			<section className=" relative max-lg:hidden flex flex-col justify-center gap-y-20">
 				<h1 className='text-2xl font-bold text-start'>How I Code & What I'm Learning</h1>
 				<div className="flex items-center justify-between gap-y-14">
 					<MagicCard className="w-250 shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-104">
