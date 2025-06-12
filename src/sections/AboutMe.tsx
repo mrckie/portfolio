@@ -30,7 +30,7 @@ const AboutMe = () => {
 			/>
 			<div className='flex flex-col gap-y-3 lg:gap-y-6 md:flex-row md:items-center md:justify-between lg:flex-row lg:items-center lg:justify-between'>
 				<div className='flex flex-col gap-y-5'>
-					<TypingAnimation className='text-2xl md:text-4xl lg:text-5xl font-bold'> Hi, I&apos;m Mark Jefferson Saldaña — Passionate Full-Stack Web Developer </TypingAnimation>
+					<TypingAnimation className='text-2xl md:text-5xl font-bold'> Hi, I&apos;m Mark Jefferson Saldaña — Passionate Full-Stack Web Developer </TypingAnimation>
 					<AnimatedShinyText className='text-zinc-500 lg:text-lg'>
 						Currently studying Computer Science while building real-world web apps with Laravel, React, Inertia.js, and Tailwind CSS. I apply best practices and modern tooling to every project I create.
 					</AnimatedShinyText>
@@ -52,7 +52,7 @@ const AboutMe = () => {
 						href='https://github.com/mrckie'
 						target='_blank'
 						rel='noopener noreferrer'
-						aria-label='GitHub'
+						aria-label='GitHub Profile'
 					>
 						<FaGithub className='size-4.5' />
 					</a>
@@ -62,7 +62,7 @@ const AboutMe = () => {
 						href="https://www.facebook.com/mark.jfrsn"
 						target='_blank'
 						rel='noopener noreferrer'
-						aria-label='Facebook'
+						aria-label='Facebook Profile'
 					>
 						<FaFacebook className='size-4.5' />
 					</a>

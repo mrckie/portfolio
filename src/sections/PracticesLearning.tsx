@@ -99,12 +99,11 @@ const PracticesLearning = () => {
 		<>
 
 			{/* 640px-768px breakpoint */}
-			<section className="flex flex-col items-start gap-y-14 lg:hidden">
-
-				<h1 className='text-xl font-semibold lg:text-2xl lg:font-bold'>How I Code & What I'm Learning</h1>
+			<section className="flex flex-col items-start gap-y-18 lg:hidden">
+				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>How I Code & What I'm Learning</h1>
 				<MagicCard className="w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-						<h1 className="md:text-lg md:font-semibold font-medium text-center">My Development Practices</h1>
+						<h1 className="text-lg md:text-2xl md:font-bold font-semibold text-center">My Development Practices</h1>
 						<div
 							className={cn(
 								"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
@@ -121,7 +120,7 @@ const PracticesLearning = () => {
 				</MagicCard>
 
 				<div className="px-4 py-7 flex flex-col items-center gap-y-4 size-full justify-center overflow-hidden">
-					<h1 className="font-medium text-center md:text-lg md:font-semibold">
+					<h1 className="text-lg font-bold text-center md:text-2xl md:font-bold">
 						Currently Exploring and Learning
 					</h1>
 
@@ -130,7 +129,7 @@ const PracticesLearning = () => {
 
 				<MagicCard className="shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-						<h1 className="md:text-lg md:font-semibold font-medium text-center">
+						<h1 className="text-lg md:text-2xl md:font-bold font-bold text-center">
 							My Developer Journey
 						</h1>
 
@@ -148,12 +147,12 @@ const PracticesLearning = () => {
 			</section>
 
 			{/* 1024px breakpoint */}
-			<section className=" relative max-lg:hidden flex flex-col justify-center gap-y-20">
-				<h1 className='text-2xl font-bold text-start'>How I Code & What I'm Learning</h1>
+			<section className=" relative max-lg:hidden flex flex-col justify-center gap-y-23">
+				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>How I Code & What I'm Learning</h1>
 				<div className="flex items-center justify-between gap-y-14">
-					<MagicCard className="w-250 shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-104">
+					<MagicCard className="w-250 shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 						<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-							<h1 className="text-xl font-semibold text-center">My Development Practices</h1>
+							<h1 className="text-3xl font-semibold text-center">My Development Practices</h1>
 							<div
 								className={cn(
 									"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
@@ -170,7 +169,7 @@ const PracticesLearning = () => {
 					</MagicCard>
 
 					<div className="px-4 py-7 flex flex-col items-center gap-y-4 size-full justify-center overflow-hidden">
-						<h1 className="text-center text-xl font-semibold">
+						<h1 className="text-center text-3xl font-semibold">
 							Currently Exploring and Learning
 						</h1>
 
@@ -178,9 +177,9 @@ const PracticesLearning = () => {
 					</div>
 				</div>
 
-				<MagicCard className="w-180 mx-auto shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-104">
+				<MagicCard className="w-180 mx-auto shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-						<h1 className="text-xl font-semibold text-center">
+						<h1 className="text-3xl font-semibold text-center">
 							My Developer Journey
 						</h1>
 
