@@ -21,7 +21,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Header />
-      <main className='relative px-7 lg:px-10 z-0 flex flex-col gap-y-24 py-20 lg:py-35 lg:gap-y-35'>
+      <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 lg:gap-y-53'>
         <Particles
           className="absolute inset-0 z-0"
           quantity={40}
