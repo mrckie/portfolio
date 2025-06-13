@@ -186,7 +186,7 @@ const PracticesLearning = () => {
 						<div className="flex flex-row gap-x-5 p-3">
 							<span className="border-2"></span>
 							<AnimatedShinyText className="dark:text-zinc-500 text-zinc-950 text-lg">
-								As a computer science student and aspiring full-stack developer, I’m constantly learning and refining my skills — not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
+								As a computer science student and aspiring full-stack developer, I&apos;m constantly learning and refining my skills not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
 								<br />
 								<br />
 								Hungry to learn, building side projects, dive into official docs, and engage with developer communities to stay current with modern practices.

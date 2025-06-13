@@ -14,22 +14,48 @@ import { Textarea } from "../ui/textarea";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiMessageSquare } from "react-icons/fi";
 import { MdPersonOutline } from "react-icons/md";
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 export function ContactForm({ button }: { button: React.ReactNode }) {
+	const form = useRef<HTMLFormElement>(null);
+	const [isSending, setIsSending] = useState(false);
+
+	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault()
+		setIsSending(true)
+
+		try {
+			await emailjs.sendForm(
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				form.current!,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+			);
+			alert('Message send successfully!');
+			form.current?.reset();
+		} catch {
+			console.error('EmailJS Error:')
+			alert('Failed to send a message.')
+		} finally {
+			setIsSending(false)
+		}
+	}
+
 	return (
 		<Dialog>
-			<form>
-				<DialogTrigger asChild>
-					{button}
-				</DialogTrigger>
-				<DialogContent className="sm:max-w-[425px] flex flex-col gap-y-9 py-8">
-					<ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
-					<DialogHeader>
-						<DialogTitle className="lg:text-3xl text-2xl font-bold">Contact Me</DialogTitle>
-						<DialogDescription className="text-sm">
-							I typically respond quickly, so feel free to reach out anytime!
-						</DialogDescription>
-					</DialogHeader>
+			<DialogTrigger asChild>
+				{button}
+			</DialogTrigger>
+			<DialogContent className="sm:max-w-[425px] flex flex-col gap-y-9 py-8">
+				<ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+				<DialogHeader>
+					<DialogTitle className="lg:text-3xl text-2xl font-bold">Contact Me</DialogTitle>
+					<DialogDescription className="text-sm">
+						I typically respond quickly, so feel free to reach out anytime!
+					</DialogDescription>
+				</DialogHeader>
+				<form ref={form} onSubmit={sendEmail}>
 					<div className="flex flex-col gap-y-6">
 						<div className="relative flex items-center w-full ">
 							<MdPersonOutline className="absolute left-3 flex items-center justify-center size-5.5" />
@@ -45,21 +71,14 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 						</div>
 					</div>
 
-					<DialogFooter>
-						<Button className="cursor-pointer " type="submit">
-							<a
-								href='https://www.facebook.com/profile.php?id=61574225763548'
-								target='_blank'
-								rel='noopener noreferrer'
-								aria-label='GitHub'
-							>
-								Send Message
-							</a>
+					<DialogFooter className="pt-10">
+						<Button className="cursor-pointer " type="submit" disabled={isSending}>
+							{isSending ? 'Sending...' : 'Send a message'}
 						</Button>
 					</DialogFooter>
-				</DialogContent>
-			</form>
-		</Dialog>
+				</form>
+			</DialogContent>
+		</Dialog >
 	)
 }
 
