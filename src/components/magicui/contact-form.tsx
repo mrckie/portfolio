@@ -21,6 +21,7 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 	const form = useRef<HTMLFormElement>(null);
 	const [isSending, setIsSending] = useState(false);
 
+
 	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		setIsSending(true)
@@ -30,7 +31,7 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 				import.meta.env.VITE_EMAILJS_SERVICE_ID,
 				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 				form.current!,
-				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 			);
 			alert('Message send successfully!');
 			form.current?.reset();
@@ -41,6 +42,12 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 			setIsSending(false)
 		}
 	}
+
+	console.log("EmailJS Env Vars:", {
+		service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+		template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+		publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+	});
 
 	return (
 		<Dialog>
