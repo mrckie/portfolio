@@ -29,7 +29,16 @@ const NavHeader = () => {
           <SheetContent side="left" className="w-60">
             <SheetHeader>
               <SheetTitle className="flex flex-col items-start mt-7 gap-y-5">
-                <RainbowButton variant='outline' className="text-sm p-2">Mark Jefferson E. Saldaña</RainbowButton>
+                <RainbowButton variant='outline' className="text-sm p-2 mb-9">Mark Jefferson E. Saldaña</RainbowButton>
+                <a
+                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  href="/#home" onClick={e => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}>Home</a>
+                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
+                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
+                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Tech Stack</a>
                 <ContactForm
                   button={
                     <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 dark:text-white">

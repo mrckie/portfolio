@@ -99,7 +99,7 @@ const AboutMe = () => {
 		<>
 
 			{/* 640px-768px breakpoint */}
-			<section className="flex flex-col items-start gap-y-18 lg:hidden">
+			<section className="flex flex-col items-start gap-y-18 lg:hidden" id="about-me">
 				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>About Me</h1>
 				<MagicCard className="w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
