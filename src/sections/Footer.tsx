@@ -14,7 +14,7 @@ const Footer = () => {
 					<div className='flex flex-col gap-y-5'>
 						<div className='flex items-center gap-x-4'>
 							<img src={Mark} className='size-9 border-1 rounded-full dark:bg-white' alt="Website Logo" />
-							<h1 className='lg:text-xl font-bold'>Mark Jefferson Saldaña</h1>
+							<h1 className='md:text-xl font-bold'>Mark Jefferson Saldaña</h1>
 
 						</div>
 						<p className='text-sm text-zinc-500'>
