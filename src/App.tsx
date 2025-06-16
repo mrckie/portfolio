@@ -1,9 +1,9 @@
 import './index.css'
-import Header from './sections/Header'
+import NavHeader from './components/ui/nav-header'
 import { ThemeProvider } from './components/theme-provider'
-import AboutMe from './sections/AboutMe'
+import Hero from './sections/Hero'
 import TechStack from './sections/TechStack'
-import PracticesLearning from './sections/PracticesLearning'
+import AboutMe from './sections/AboutMe'
 import Projects from './sections/Projects'
 import { Particles } from './components/magicui/particles'
 import { useEffect, useState } from 'react';
@@ -20,19 +20,19 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Header />
+      <NavHeader />
       <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 lg:gap-y-53'>
         <Particles
           className="absolute inset-0 z-0"
-          quantity={40}
+          quantity={100}
           ease={80}
           refresh
           color={color}
         />
+        <Hero  />
         <AboutMe />
         <Projects />
-        <TechStack />
-        <PracticesLearning />
+        <TechStack id='tech-stack'/>
       </main>
     </ThemeProvider>
   )

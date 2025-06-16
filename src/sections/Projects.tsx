@@ -2,7 +2,7 @@ import CustomCard from "@/components/ui/custom-card"
 
 const Projects = () => {
 	return (
-		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23">
+		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23" id="projects">
 			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Specialized Projects</h1>
 			<div className="flex flex-col gap-y-30">
 				<div className="flex flex-col gap-y-8 items-start justify-between lg:grid lg:grid-cols-2">

@@ -115,10 +115,10 @@ const TechStackCard = ({
 };
 
 
-const TechStack = () => {
+const TechStack = ({ id }: { id: string }) => {
 
 	return (
-		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23">
+		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23" id={id}>
 			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technology Stack</h1>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-7 overflow-hidden">
 				<Marquee pauseOnHover>
