@@ -57,34 +57,38 @@ const NavHeader = () => {
       {/* 768px-above breakpoint */}
       <div className="md:flex items-center justify-between hidden">
         <RainbowButton variant='outline' className="md:text-sm p-4">Mark Jefferson E. Saldaña</RainbowButton>
-        <div className="md:flex items-center gap-x-6">
-          <a
-            className="cursor-pointer hover:underline hover:underline-offset-5"
-            href="/#home" onClick={e => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}>Home</a>
-          <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
-          <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-          <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Tech Stack</a>
-          <ContactForm
-            button={
-              <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 md:py-2 md:px-4 dark:text-white">
-                Contact Me
-              </ShimmerButton>
-            }
-          />
-          <button className="cursor-pointer dark:hover:bg-zinc-100/30 hover:bg-zinc-800/20  rounded-lg p-1"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          >
-            {
-              theme === 'dark' ? (
-                <RiMoonClearLine className="size-5 text-white" />
-              ) : (
-                <IoSunnyOutline className="size-5" />
-              )
-            }
-          </button>
+        <div className="md:flex items-center gap-x-10">
+          <div className="md:flex items-center gap-x-6">
+            <a
+              className="cursor-pointer hover:underline hover:underline-offset-5"
+              href="/#home" onClick={e => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}>Home</a>
+            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
+            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
+            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Tech Stack</a>
+          </div>
+          <div className="md:flex items-center gap-x-6">
+            <ContactForm
+              button={
+                <ShimmerButton shimmerSize="0.1em" className="text-sm p-2 md:py-2 md:px-4 dark:text-white">
+                  Contact Me
+                </ShimmerButton>
+              }
+            />
+            <button className="cursor-pointer dark:hover:bg-zinc-100/30 hover:bg-zinc-800/20  rounded-lg p-1"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            >
+              {
+                theme === 'dark' ? (
+                  <RiMoonClearLine className="size-5 text-white" />
+                ) : (
+                  <IoSunnyOutline className="size-5" />
+                )
+              }
+            </button>
+          </div>
         </div>
       </div>
     </div >

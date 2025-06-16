@@ -8,6 +8,7 @@ import Projects from './sections/Projects'
 import { Particles } from './components/magicui/particles'
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/components/theme-provider';
+import Footer from './sections/Footer'
 
 
 function App() {
@@ -29,10 +30,11 @@ function App() {
           refresh
           color={color}
         />
-        <Hero  />
+        <Hero />
         <AboutMe />
         <Projects />
-        <TechStack id='tech-stack'/>
+        <TechStack id='tech-stack' />
+        <Footer />
       </main>
     </ThemeProvider>
   )

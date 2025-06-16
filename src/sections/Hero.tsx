@@ -55,7 +55,7 @@ const Hero = () => {
 						rel='noopener noreferrer'
 						aria-label='GitHub Profile'
 					>
-						<FaGithub className='size-4.5' />
+						<FaGithub className='size-5' />
 					</a>
 				</Button>
 				<Button className='px-3 cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
@@ -65,7 +65,7 @@ const Hero = () => {
 						rel='noopener noreferrer'
 						aria-label='GitHub Profile'
 					>
-						<FaLinkedin className='size-4.5' />
+						<FaLinkedin className='size-5' />
 					</a>
 				</Button>
 				<Button className='px-3 cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
@@ -75,7 +75,7 @@ const Hero = () => {
 						rel='noopener noreferrer'
 						aria-label='Facebook Profile'
 					>
-						<FaFacebook className='size-4.5' />
+						<FaFacebook className='size-5' />
 					</a>
 				</Button>
 			</div>
