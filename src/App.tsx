@@ -2,7 +2,7 @@ import './index.css'
 import NavHeader from './components/ui/nav-header'
 import { ThemeProvider } from './components/theme-provider'
 import Hero from './sections/Hero'
-import TechStack from './sections/TechStack'
+import TechnicalSkills from './sections/TechnicalSkills'
 import AboutMe from './sections/AboutMe'
 import Projects from './sections/Projects'
 import { Particles } from './components/magicui/particles'
@@ -33,7 +33,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Projects />
-        <TechStack id='tech-stack' />
+        <TechnicalSkills id='tech-stack' />
         <Footer />
       </main>
     </ThemeProvider>

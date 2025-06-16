@@ -17,7 +17,7 @@ import { GrMysql } from "react-icons/gr";
 import { SiShadcnui } from "react-icons/si";
 import { SiMariadb } from "react-icons/si";
 
-const techStack = [
+const skills = [
 	{
 		name: "Laravel",
 		icon: <FaLaravel className="size-6 md:size-8 text-[#FF2D20]" />,
@@ -81,11 +81,11 @@ const techStack = [
 
 ];
 
-const middleIndex = Math.ceil(techStack.length / 2);
-const firstRow = techStack.slice(0, middleIndex);
-const secondRow = techStack.slice(middleIndex);
+const middleIndex = Math.ceil(skills.length / 2);
+const firstRow = skills.slice(0, middleIndex);
+const secondRow = skills.slice(middleIndex);
 
-const TechStackCard = ({
+const SkillsCard = ({
 	icon,
 	name,
 }: {
@@ -115,20 +115,20 @@ const TechStackCard = ({
 };
 
 
-const TechStack = ({ id }: { id: string }) => {
+const TechnialSkills = ({ id }: { id: string }) => {
 
 	return (
 		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23" id={id}>
-			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technology Stack</h1>
+			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technical Skills</h1>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-7 overflow-hidden">
 				<Marquee pauseOnHover>
 					{firstRow.map((review) => (
-						<TechStackCard key={review.name} {...review} />
+						<SkillsCard key={review.name} {...review} />
 					))}
 				</Marquee>
 				<Marquee reverse pauseOnHover>
 					{secondRow.map((review) => (
-						<TechStackCard key={review.name} {...review} />
+						<SkillsCard key={review.name} {...review} />
 					))}
 				</Marquee>
 				<div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
@@ -139,4 +139,4 @@ const TechStack = ({ id }: { id: string }) => {
 	)
 }
 
-export default TechStack
+export default TechnialSkills
