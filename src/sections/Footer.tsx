@@ -10,11 +10,11 @@ const Footer = () => {
 		<>
 			<section className='flex flex-col items-center gap-y-7 lg:gap-y-12'>
 				<Separator />
-				<div className='grid grid-cols-3 w-full lg:gap-x-20 mb-20'>
+				<div className='flex flex-col gap-y-20 lg:grid lg:grid-cols-3 w-full lg:gap-x-20 mb-20'>
 					<div className='flex flex-col gap-y-5'>
 						<div className='flex items-center gap-x-4'>
 							<img src={Mark} className='size-9 border-1 rounded-full dark:bg-white' alt="Website Logo" />
-							<h1 className='text-xl font-bold'>Mark Jefferson Saldaña</h1>
+							<h1 className='lg:text-xl font-bold'>Mark Jefferson Saldaña</h1>
 
 						</div>
 						<p className='text-sm text-zinc-500'>
@@ -90,7 +90,7 @@ const Footer = () => {
 					</div>
 
 				</div>
-				<span className='text-xs text-zinc-500 -mb-30'>
+				<span className='text-xs text-zinc-500 lg:-mb-30 -mb-20'>
 					© 2025 Mark Jefferson Saldaña. All rights reserved.
 				</span>
 			</section>
