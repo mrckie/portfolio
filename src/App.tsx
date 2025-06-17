@@ -5,37 +5,14 @@ import Hero from './sections/Hero'
 import TechnicalSkills from './sections/TechnicalSkills'
 import AboutMe from './sections/AboutMe'
 import Projects from './sections/Projects'
-import { Particles } from './components/magicui/particles'
-import { useEffect, useState } from 'react';
-import { useTheme } from '@/components/theme-provider';
 import Footer from './sections/Footer'
-import { Meteors } from './components/magicui/meteors'
 
 
 function App() {
-  const { theme, setTheme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
-
-  useEffect(() => {
-    setColor(theme === "dark" ? "#ffffff" : "#000000");
-  }, [setTheme]);
-
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <NavHeader />
-      <main className='relative px-8 lg:px-10 z-0 flex flex-col py-32 lg:py-53 md:gap-y-53'>
-        <Meteors
-          number={4}
-          minDelay={0.9}
-           />
-        <Particles
-          className="absolute inset-0 z-0"
-          quantity={200}
-
-          ease={80}
-          refresh
-          color={color}
-        />
+      <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 md:gap-y-53'>
         <Hero />
         <AboutMe />
         <Projects />

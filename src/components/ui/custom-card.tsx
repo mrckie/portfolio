@@ -14,10 +14,10 @@ const CustomCard = ({ title, description, features, techStacks, link }: Text) =>
 	return (
 		<div className="flex flex-col items-start gap-y-6 lg:ml-20 ">
 			<h1 className="text-lg font-bold md:text-3xl ">{title}</h1>
-			<h2 className="text-sm md:text-base">
+			<h2 className="text-base">
 				{description}
 			</h2>
-			<ul className="text-sm md:text-base flex flex-col gap-y-2 text-zinc-500">
+			<ul className="text-base flex flex-col gap-y-2 text-zinc-500">
 				{features.map((feature, index) => (
 					<li className="flex gap-x-2" key={index}>🔹<span>{feature}</span></li>
 				))}
