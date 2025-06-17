@@ -22,6 +22,7 @@ import { SiAssemblyscript } from "react-icons/si";
 import { FaDartLang } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaFlutter } from "react-icons/fa6";
+import { SiPostman } from "react-icons/si";
 
 const skills = [
 
@@ -109,6 +110,10 @@ const skills = [
 	{
 		name: "Firebase",
 		icon: <IoLogoFirebase className="size-6 md:size-8 text-[#FFCA28]" />
+	},
+	{
+		name: "Postman",
+		icon: <SiPostman className="size-6 md:size-8 text-[#EF5B25]" />
 	},
 
 ];
