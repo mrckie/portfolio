@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion, useAnimation, useInView } from "motion/react";
@@ -53,11 +54,11 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: duration ? duration : 0.5, ease: "easeIn" }}
+        transition={{ duration: duration ? duration : 0.5, ease: 'easeInOut' }}
         style={{
           position: "absolute",
-          top: 4,
-          bottom: 4,
+          top: 0,
+          bottom: 0,
           left: 0,
           right: 0,
           zIndex: 20,
