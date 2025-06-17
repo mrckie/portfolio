@@ -10,7 +10,7 @@ const Projects = () => {
 						autoPlay
 						loop
 						muted
-						className="rounded-2xl shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+						className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723270/a0djjbgwboaombl52e9l.mp4' type="video/mp4" />
 					</video>
 					<CustomCard
@@ -42,7 +42,7 @@ const Projects = () => {
 						autoPlay
 						loop
 						muted
-						className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+						className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 shadow-xl">
 						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723509/b2kakrkdmyrhatbnfqwj.mp4' type="video/mp4" />
 					</video>
 					<CustomCard
@@ -71,7 +71,7 @@ const Projects = () => {
 						autoPlay
 						loop
 						muted
-						className="rounded-2xl shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+						className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749726631/3rd_project_dfuvnl.mp4' type="video/mp4" />
 					</video>
 					<CustomCard

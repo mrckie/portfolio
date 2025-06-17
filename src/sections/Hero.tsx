@@ -51,7 +51,7 @@ const Hero = () => {
 				</span>
 			</div>
 			<BoxReveal boxColor={color} duration={0.8}>
-				<div className='flex items-center gap-x-4 md:gap-x-6'>
+				<div className='flex items-center gap-x-4 md:gap-x-6 py-2 px-1 '>
 					<ContactForm button={
 						<Button className='cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
 							<IoMdMail />
@@ -59,6 +59,7 @@ const Hero = () => {
 						</Button>
 					}
 					/>
+
 
 					<Button className='px-3 cursor-pointer duration-300 ease-in-out hover:-translate-y-1 hover:scale-104'>
 						<a
@@ -92,7 +93,7 @@ const Hero = () => {
 					</Button>
 				</div>
 			</BoxReveal>
-		</section>
+		</section >
 	)
 }
 

@@ -21,7 +21,7 @@ const Footer = () => {
 							Constantly learning and refining my skills not just through coursework, but through hands-on practice and deep dives into real-world tools and concepts.
 						</p>
 						<div className='flex text-sm items-center gap-x-4'>
-							<h1>Built With:</h1>
+							<h1>Built with:</h1>
 							<WordRotate
 								className="font-bold text-black dark:text-white duration-300"
 								words={["React Typescript", "Vite", "Shadcn", "MagicUI", "Tailwind"]}

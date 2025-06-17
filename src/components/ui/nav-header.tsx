@@ -30,15 +30,40 @@ const NavHeader = () => {
             <SheetHeader>
               <SheetTitle className="flex flex-col items-start mt-7 gap-y-5">
                 <RainbowButton variant='outline' className="text-sm md:text-base p-2 mb-9">Mark Jefferson E. Saldaña</RainbowButton>
-                <a
+                <span
                   className="cursor-pointer hover:underline hover:underline-offset-5"
-                  href="/#home" onClick={e => {
-                    e.preventDefault();
+                  onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}>Home</a>
-                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
-                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-skill">Technical Skills</a>
+                  }}>
+                  Home
+                </span>
+                <span
+                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  onClick={() => {
+                    const section = document.getElementById("about-me");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  About Me
+                </span>
+                <span
+                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  onClick={() => {
+                    const section = document.getElementById("projects");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Projects
+                </span>
+                <span
+                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  onClick={() => {
+                    const section = document.getElementById("tech-skill");
+                    section?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Skills
+                </span>
                 <ContactForm
                   button={
                     <ShimmerButton shimmerSize="0.1em" className="text-sm md:py-2 md:px-4 md:text-base  dark:text-white">
@@ -68,15 +93,39 @@ const NavHeader = () => {
         <RainbowButton variant='outline' className="md:text-sm p-4">Mark Jefferson E. Saldaña</RainbowButton>
         <div className="md:flex items-center gap-x-10">
           <div className="md:flex items-center gap-x-6">
-            <a
+            <span
               className="cursor-pointer hover:underline hover:underline-offset-5"
-              href="/#home" onClick={e => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}>Home</a>
-            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
-            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-skill">Skills</a>
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Home
+            </span>
+            <span
+              className="cursor-pointer hover:underline hover:underline-offset-5"
+              onClick={() => {
+                const section = document.getElementById("about-me");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              About Me
+            </span>
+            <span
+              className="cursor-pointer hover:underline hover:underline-offset-5"
+              onClick={() => {
+                const section = document.getElementById("projects");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Projects
+            </span>
+            <span
+              className="cursor-pointer hover:underline hover:underline-offset-5"
+              onClick={() => {
+                const section = document.getElementById("tech-skill");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Skills
+            </span>
           </div>
           <div className="md:flex items-center gap-x-6">
             <ContactForm
