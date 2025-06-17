@@ -23,6 +23,7 @@ import { FaDartLang } from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaFlutter } from "react-icons/fa6";
 import { SiPostman } from "react-icons/si";
+import { BlurFade } from "@/components/magicui/blur-fade";
 
 const skills = [
 
@@ -156,23 +157,26 @@ const TechnialSkills = () => {
 
 	return (
 		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23 mb-40" id='tech-skill'>
-			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technical Skills</h1>
+			<BlurFade inView>
+				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technical Skills</h1>
+			</BlurFade>
 			<div className="relative flex w-full flex-col items-center justify-center gap-y-7 overflow-hidden">
-				<Marquee pauseOnHover>
-					{firstRow.map((review) => (
-						<SkillsCard key={review.name} {...review} />
-					))}
-				</Marquee>
-				<Marquee reverse pauseOnHover>
-					{secondRow.map((review) => (
-						<SkillsCard key={review.name} {...review} />
-					))}
-				</Marquee>
-
+				<BlurFade inView>
+					<Marquee pauseOnHover>
+						{firstRow.map((review) => (
+							<SkillsCard key={review.name} {...review} />
+						))}
+					</Marquee>
+					<Marquee reverse pauseOnHover>
+						{secondRow.map((review) => (
+							<SkillsCard key={review.name} {...review} />
+						))}
+					</Marquee>
+				</BlurFade>
 				<div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
 				<div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
 			</div>
-		</section>
+		</section >
 
 	)
 }

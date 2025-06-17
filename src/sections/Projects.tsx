@@ -1,18 +1,23 @@
+import { BlurFade } from "@/components/magicui/blur-fade"
 import CustomCard from "@/components/ui/custom-card"
 
 const Projects = () => {
 	return (
 		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23" id="projects">
-			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Specialized Projects</h1>
+			<BlurFade inView >
+				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Specialized Projects</h1>
+			</BlurFade>
 			<div className="flex flex-col gap-y-30">
 				<div className="flex flex-col gap-y-8 items-start justify-between lg:grid lg:grid-cols-2">
-					<video
-						autoPlay
-						loop
-						muted
-						className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
-						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723270/a0djjbgwboaombl52e9l.mp4' type="video/mp4" />
-					</video>
+					<BlurFade inView >
+						<video
+							autoPlay
+							loop
+							muted
+							className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+							<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723270/a0djjbgwboaombl52e9l.mp4' type="video/mp4" />
+						</video>
+					</BlurFade>
 					<CustomCard
 						title="Barangay Document Requesting System"
 						description="Designed to simplify and digitize the process of requesting official barangay documents."
@@ -38,13 +43,15 @@ const Projects = () => {
 				</div>
 
 				<div className="flex flex-col gap-y-8 items-start justify-between lg:grid lg:grid-cols-2">
-					<video
-						autoPlay
-						loop
-						muted
-						className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 shadow-xl">
-						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723509/b2kakrkdmyrhatbnfqwj.mp4' type="video/mp4" />
-					</video>
+					<BlurFade inView>
+						<video
+							autoPlay
+							loop
+							muted
+							className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 shadow-xl">
+							<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723509/b2kakrkdmyrhatbnfqwj.mp4' type="video/mp4" />
+						</video>
+					</BlurFade>
 					<CustomCard
 						title="To-do App"
 						description="A simple to-do app that can perform CRUD"
@@ -67,13 +74,15 @@ const Projects = () => {
 				</div>
 
 				<div className="flex flex-col gap-y-8 items-start justify-between lg:grid lg:grid-cols-2">
-					<video
-						autoPlay
-						loop
-						muted
-						className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
-						<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749726631/3rd_project_dfuvnl.mp4' type="video/mp4" />
-					</video>
+					<BlurFade inView>
+						<video
+							autoPlay
+							loop
+							muted
+							className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+							<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749726631/3rd_project_dfuvnl.mp4' type="video/mp4" />
+						</video>
+					</BlurFade>
 					<CustomCard
 						title="Blog Website"
 						description="A simple blog website for publishing and reading articles, with a clean design and basic content management features."
