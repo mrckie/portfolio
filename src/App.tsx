@@ -26,7 +26,8 @@ function App() {
       <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 lg:gap-y-53'>
         <Meteors
           number={4}
-          minDelay={0.9} />
+          minDelay={0.9}
+           />
         <Particles
           className="absolute inset-0 z-0"
           quantity={200}
