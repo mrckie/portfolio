@@ -24,7 +24,7 @@ const Footer = () => {
 							<h1>Built With:</h1>
 							<WordRotate
 								className="font-bold text-black dark:text-white duration-300"
-								words={["React Typescript", "Vite", "Shadcn", "MagicUI", "Motion", "Tailwind"]}
+								words={["React Typescript", "Vite", "Shadcn", "MagicUI", "Tailwind"]}
 							/>
 						</div>
 					</div>

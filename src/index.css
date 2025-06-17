@@ -3,7 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
@@ -197,7 +196,21 @@ html {
       transform: translate(-50%, -50%) scale(0.9);
     }
   }
-}
+  --animate-meteor: meteor 5s linear infinite
+;
+  @keyframes meteor {
+  0% {
+    transform: rotate(var(--angle)) translateX(0);
+    opacity: 1;
+    }
+  70% {
+    opacity: 1;
+    }
+  100% {
+    transform: rotate(var(--angle)) translateX(-500px);
+    opacity: 0;
+    }
+  }}
 
 :root {
   --color-1: oklch(66.2% 0.225 25.9);

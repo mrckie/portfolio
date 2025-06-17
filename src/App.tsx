@@ -9,6 +9,7 @@ import { Particles } from './components/magicui/particles'
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/components/theme-provider';
 import Footer from './sections/Footer'
+import { Meteors } from './components/magicui/meteors'
 
 
 function App() {
@@ -23,9 +24,13 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <NavHeader />
       <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 lg:gap-y-53'>
+        <Meteors
+          number={4}
+          minDelay={0.9} />
         <Particles
           className="absolute inset-0 z-0"
-          quantity={100}
+          quantity={200}
+
           ease={80}
           refresh
           color={color}
@@ -33,7 +38,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Projects />
-        <TechnicalSkills/>
+        <TechnicalSkills />
         <Footer />
       </main>
     </ThemeProvider>

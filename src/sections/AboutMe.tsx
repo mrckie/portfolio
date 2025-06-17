@@ -7,7 +7,6 @@ import Me from '../assets/me.jpg'
 import { MorphingText } from "@/components/magicui/morphing-text";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import { motion } from "motion/react";
 
 
 const slugs = [
@@ -170,7 +169,6 @@ const AboutMe = () => {
 								</CardContent>
 							</Card>
 						</div>
-
 
 						<MagicCard className="shadow-lg w-1/2 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
 							<div className="size-full px-4 py-7 flex flex-col items-center gap-y-8 ">
