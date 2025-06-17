@@ -4,7 +4,6 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 import Mark from '../assets/m.png'
 import { WordRotate } from '@/components/magicui/word-rotate';
 import { FaSquareInstagram } from "react-icons/fa6"
-import { BlurFade } from '@/components/magicui/blur-fade';
 
 const Footer = () => {
 	return (
