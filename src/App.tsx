@@ -23,7 +23,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <NavHeader />
-      <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 lg:gap-y-53'>
+      <main className='relative px-8 lg:px-10 z-0 flex flex-col py-32 lg:py-53 md:gap-y-53'>
         <Meteors
           number={4}
           minDelay={0.9}

@@ -90,7 +90,7 @@ const Footer = () => {
 					</div>
 
 				</div>
-				<span className='text-xs text-zinc-500 lg:-mb-30 -mb-20'>
+				<span className='text-xs text-zinc-500 md:-mb-5'>
 					© 2025 Mark Jefferson Saldaña. All rights reserved.
 				</span>
 			</section>

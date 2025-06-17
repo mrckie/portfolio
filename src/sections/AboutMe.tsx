@@ -100,126 +100,80 @@ const AboutMe = () => {
 	);
 
 	return (
-		<>
+		<section className=" relative flex flex-col justify-center gap-y-23" id="about-me">
+			<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>About Me</h1>
+			<div className="flex flex-col md:gap-y-5 lg:gap-y-7">
+				<div className="flex justify-between md:gap-x-5 lg:gap-x-7">
 
-			{/* 640px-768px breakpoint */}
-			<section className="flex flex-col items-start gap-y-18 lg:hidden" id="about-me">
-				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>About Me</h1>
-				<MagicCard className="w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
-					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-						<h1 className="text-lg md:text-2xl md:font-bold font-semibold text-center">My Development Practices</h1>
-						<div
-							className={cn(
-								"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
-							)}
-						>
-							<Marquee pauseOnHover vertical>
-								{practices.map((review) => (
-									<PracCard key={review.item} {...review} />
-								))}
-							</Marquee>
-							<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
-						</div>
-					</div>
-				</MagicCard>
+					<div className="flex flex-col md:gap-y-5 lg:gap-y-7">
+						<img src={Me} className="rounded-4xl md:size-50 lg:size-100 object-cover shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102" alt="" />
 
-				<div className="px-4 py-7 flex flex-col items-center gap-y-4 size-full justify-center overflow-hidden">
-					<h1 className="text-lg font-bold text-center md:text-2xl md:font-bold">
-						Currently Exploring and Learning
-					</h1>
-
-					<IconCloud images={images} />
-				</div>
-
-				<MagicCard className="shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
-					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-						<h1 className="text-lg md:text-2xl md:font-bold font-bold text-center">
-							My Developer Journey
-						</h1>
-
-						<div className="flex flex-row gap-x-4">
-							<span className="border-2"></span>
-							<AnimatedShinyText className="dark:text-zinc-500 text-zinc-950 text-sm md:text-base">
-								As a computer science student and aspiring full-stack developer, I’m constantly learning and refining my skills — not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
-								<br />
-								<br />
-								Hungry to learn, building side projects, dive into official docs, and engage with developer communities to stay current with modern practices.
-							</AnimatedShinyText>
-						</div>
-					</div>
-				</MagicCard>
-			</section>
-
-			{/* 1024px breakpoint */}
-			<section className=" relative max-lg:hidden flex flex-col justify-center gap-y-23" id="about-me">
-				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>About Me</h1>
-				<div className="flex flex-col gap-y-7">
-					<div className="flex justify-between gap-x-7">
-
-						<div className="flex flex-col gap-y-7">
-							<img src={Me} className="rounded-4xl size-100 object-cover shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102" alt="" />
-
-							<Card className="flex flex-col justify-center gap-y-10 h-full relative overflow-hidden w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
-								<ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
-								<CardTitle>
-									<h1 className="text-2xl font-semibold text-center">Tech Stack</h1>
-								</CardTitle>
-								<CardContent>
-									<MorphingText texts={["Laravel", "Tailwind", "React", "Inertia.js", "MariaDB", "MySQL", "Shadcn", "MagicUI", "Vite"]} />
-								</CardContent>
-							</Card>
-						</div>
-
-						<MagicCard className="shadow-lg w-1/2 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
-							<div className="size-full px-4 py-7 flex flex-col items-center gap-y-8 ">
-								<h1 className="text-center text-2xl font-semibold">
-									Currently Exploring and Learning
-								</h1>
-
-								<IconCloud images={images} />
-							</div>
-						</MagicCard>
-
-
-						<MagicCard className="w-1/2 shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
-							<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-								<h1 className="text-2xl font-semibold text-center">My Development Practices</h1>
-								<div
-									className={cn(
-										"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
-									)}
-								>
-									<Marquee pauseOnHover vertical className=" [--duration:20s]" >
-										{practices.map((review) => (
-											<PracCard key={review.item} {...review} />
-										))}
-									</Marquee>
-									<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
-								</div>
-							</div>
-						</MagicCard>
+						<Card className="flex flex-col justify-center lg:gap-y-10 h-full relative overflow-hidden w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
+							<ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
+							<CardTitle>
+								<h1 className="lg:text-[25px] md:text-xl font-bold text-center">Tech Stack</h1>
+							</CardTitle>
+							<CardContent>
+								<MorphingText texts={["Laravel", "Tailwind", "React", "Inertia.js", "MariaDB", "MySQL", "Shadcn", "MagicUI", "Vite"]} className="md:text-2xl" />
+							</CardContent>
+						</Card>
 					</div>
 
+					<MagicCard className="md:hidden shadow-lg w-1/2 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
+						<div className="size-full px-4 py-7 flex flex-col items-center gap-y-8 ">
+							<h1 className="text-center text-2xl font-semibold">
+								Currently Exploring and Learning
+							</h1>
 
-					<MagicCard className="w-full mx-auto shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
-						<div className="px-4 py-7 flex flex-col items-center gap-y-8">
-
-							<div className="flex flex-row gap-x-5 p-3">
-								<span className="border-2"></span>
-								<AnimatedShinyText className="dark:text-zinc-500 text-zinc-950 text-lg text-justify">
-									<span className="text-4xl font-coiny">“ </span>As a computer science student and aspiring full-stack developer, I&apos;m constantly learning and refining my skills not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
-									<br />
-									<br />
-									I treat learning as a continuous habit. My goal isn&apos;t just to “get things working” it&apos;s to understand why things work, how to do them right, and how to keep improving. I believe that makes me a better developer, collaborator, and problem solver.<span className="text-4xl font-coiny"> ”</span>
-								</AnimatedShinyText >
-							</div>
+							<IconCloud images={images} />
 						</div>
 					</MagicCard>
 
+					<MagicCard className="lg:w-1/2 md:w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
+						<div className="px-4 py-7 flex flex-col items-center gap-y-8">
+							<h1 className="text-2xl font-semibold text-center">My Development Practices</h1>
+							<div
+								className={cn(
+									"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
+								)}
+							>
+								<Marquee pauseOnHover vertical className=" [--duration:20s]" >
+									{practices.map((review) => (
+										<PracCard key={review.item} {...review} />
+									))}
+								</Marquee>
+								<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
+							</div>
+						</div>
+					</MagicCard>
 				</div>
-			</section >
-		</>
 
+				<MagicCard className="shadow-lg w-full duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
+					<div className="size-full px-4 py-7 flex flex-col items-center gap-y-8 ">
+						<h1 className="text-center text-2xl font-semibold">
+							Currently Exploring and Learning
+						</h1>
+
+						<IconCloud images={images} />
+					</div>
+				</MagicCard>
+				<MagicCard className="w-full mx-auto shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
+					<div className="px-4 py-7 flex flex-col items-center gap-y-8">
+
+						<div className="flex flex-row gap-x-5 p-3">
+							<span className="border-2"></span>
+							<AnimatedShinyText className="dark:text-zinc-500 text-zinc-950 text-lg text-justify">
+								<span className="text-4xl font-coiny">“ </span>As a computer science student and aspiring full-stack developer, I&apos;m constantly learning and refining my skills not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
+								<br />
+								<br />
+								I treat learning as a continuous habit. My goal isn&apos;t just to “get things working” it&apos;s to understand why things work, how to do them right, and how to keep improving. I believe that makes me a better developer, collaborator, and problem solver.<span className="text-4xl font-coiny"> ”</span>
+							</AnimatedShinyText >
+						</div>
+					</div>
+				</MagicCard>
+
+			</div>
+		</section >
 	)
 }
 
