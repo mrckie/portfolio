@@ -1,7 +1,5 @@
 import { AnimatedShinyText } from '@/components/magicui/animated-shiny-text';
 import { ContactForm } from '@/components/magicui/contact-form';
-import { Particles } from '@/components/magicui/particles';
-import { TypingAnimation } from '@/components/magicui/typing-animation';
 import { useTheme } from '@/components/theme-provider';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
@@ -10,6 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { BoxReveal } from '@/components/magicui/box-reveal';
+
 
 
 const Hero = () => {

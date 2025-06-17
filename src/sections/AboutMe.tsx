@@ -7,6 +7,8 @@ import Me from '../assets/me.jpg'
 import { MorphingText } from "@/components/magicui/morphing-text";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import { motion } from "motion/react";
+
 
 const slugs = [
 	"react",
@@ -157,6 +159,7 @@ const AboutMe = () => {
 
 						<div className="flex flex-col gap-y-7">
 							<img src={Me} className="rounded-4xl size-100 object-cover shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102" alt="" />
+
 							<Card className="flex flex-col justify-center gap-y-10 h-full relative overflow-hidden w-full shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
 								<ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
 								<CardTitle>
@@ -168,6 +171,7 @@ const AboutMe = () => {
 							</Card>
 						</div>
 
+
 						<MagicCard className="shadow-lg w-1/2 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
 							<div className="size-full px-4 py-7 flex flex-col items-center gap-y-8 ">
 								<h1 className="text-center text-2xl font-semibold">
@@ -178,6 +182,7 @@ const AboutMe = () => {
 							</div>
 						</MagicCard>
 
+
 						<MagicCard className="w-1/2 shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
 							<div className="px-4 py-7 flex flex-col items-center gap-y-8">
 								<h1 className="text-2xl font-semibold text-center">My Development Practices</h1>
@@ -186,7 +191,7 @@ const AboutMe = () => {
 										"relative flex h-[500px] w-full flex-col overflow-hidden p-2",
 									)}
 								>
-									<Marquee pauseOnHover vertical>
+									<Marquee pauseOnHover vertical className=" [--duration:20s]" >
 										{practices.map((review) => (
 											<PracCard key={review.item} {...review} />
 										))}
@@ -195,8 +200,8 @@ const AboutMe = () => {
 								</div>
 							</div>
 						</MagicCard>
-
 					</div>
+
 
 					<MagicCard className="w-full mx-auto shadow-lg duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 rounded-4xl">
 						<div className="px-4 py-7 flex flex-col items-center gap-y-8">
@@ -212,6 +217,7 @@ const AboutMe = () => {
 							</div>
 						</div>
 					</MagicCard>
+
 				</div>
 			</section >
 		</>
