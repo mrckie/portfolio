@@ -33,7 +33,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Projects />
-        <TechnicalSkills id='tech-stack' />
+        <TechnicalSkills/>
         <Footer />
       </main>
     </ThemeProvider>

@@ -163,7 +163,7 @@ const AboutMe = () => {
 									<h1 className="text-2xl font-semibold text-center">Tech Stack</h1>
 								</CardTitle>
 								<CardContent>
-									<MorphingText texts={["Laravel", "Tailwind", "React", "Inertia.js", "MariaDB", "MySQL", "Vite"]} />
+									<MorphingText texts={["Laravel", "Tailwind", "React", "Inertia.js", "MariaDB", "MySQL", "Shadcn", "MagicUI", "Vite"]} />
 								</CardContent>
 							</Card>
 						</div>
@@ -207,7 +207,7 @@ const AboutMe = () => {
 									<span className="text-4xl font-coiny">“ </span>As a computer science student and aspiring full-stack developer, I&apos;m constantly learning and refining my skills not just through coursework, but through hands-on practice and deep articles into real-world tools and concepts.
 									<br />
 									<br />
-									I treat learning as a continuous habit. My goal isn’t just to “get things working” it&apos;s to understand why things work, how to do them right, and how to keep improving. I believe that makes me a better developer, collaborator, and problem solver.<span className="text-4xl font-coiny"> ”</span>
+									I treat learning as a continuous habit. My goal isn&apos;t just to “get things working” it&apos;s to understand why things work, how to do them right, and how to keep improving. I believe that makes me a better developer, collaborator, and problem solver.<span className="text-4xl font-coiny"> ”</span>
 								</AnimatedShinyText >
 							</div>
 						</div>

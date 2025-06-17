@@ -38,7 +38,7 @@ const NavHeader = () => {
                   }}>Home</a>
                 <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
                 <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Technical Skills</a>
+                <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-skill">Technical Skills</a>
                 <ContactForm
                   button={
                     <ShimmerButton shimmerSize="0.1em" className="text-sm md:py-2 md:px-4 md:text-base  dark:text-white">
@@ -76,7 +76,7 @@ const NavHeader = () => {
               }}>Home</a>
             <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
             <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Skills</a>
+            <a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-skill">Skills</a>
           </div>
           <div className="md:flex items-center gap-x-6">
             <ContactForm
