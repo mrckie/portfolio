@@ -19,7 +19,7 @@ export const SplashScreen = () => {
 					initial={{ opacity: 1 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1.9 }}
-					className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-black"
+					className="fixed inset-0 z-50 flex items-center justify-center bg-black"
 				>
 					<motion.div
 						initial={{ scale: 0.7, opacity: 0 }}

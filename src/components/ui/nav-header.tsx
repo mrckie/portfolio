@@ -22,7 +22,7 @@ const NavHeader = () => {
   return (
 
     <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7 lg:px-10">
-      <ScrollProgress className="md:top-[61px] top-[52px]" />
+      <ScrollProgress className="lg:top-[65px] top-[52px]" />
       {/* 320px-768px breakpoint */}
       <div className="lg:hidden flex items-center justify-between">
         <Sheet>
