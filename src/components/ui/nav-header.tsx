@@ -16,6 +16,9 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 const NavHeader = () => {
   const { theme, setTheme } = useTheme();
+
+  const hoverUnderline = 'relative cursor-pointer after:absolute after:left-0 after:mt-6.5 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-100 hover:after:w-full'
+
   return (
 
     <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7 lg:px-10">
@@ -31,14 +34,14 @@ const NavHeader = () => {
               <SheetTitle className="flex flex-col items-start mt-7 gap-y-5">
                 <RainbowButton variant='outline' className="text-sm md:text-base p-2 mb-9">Mark Jefferson E. Saldaña</RainbowButton>
                 <span
-                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  className={hoverUnderline}
                   onClick={() => {
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}>
                   Home
                 </span>
                 <span
-                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  className={hoverUnderline}
                   onClick={() => {
                     const section = document.getElementById("about-me");
                     section?.scrollIntoView({ behavior: "smooth" });
@@ -47,7 +50,7 @@ const NavHeader = () => {
                   About Me
                 </span>
                 <span
-                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  className={hoverUnderline}
                   onClick={() => {
                     const section = document.getElementById("projects");
                     section?.scrollIntoView({ behavior: "smooth" });
@@ -56,7 +59,7 @@ const NavHeader = () => {
                   Projects
                 </span>
                 <span
-                  className="cursor-pointer hover:underline hover:underline-offset-5"
+                  className={hoverUnderline}
                   onClick={() => {
                     const section = document.getElementById("tech-skill");
                     section?.scrollIntoView({ behavior: "smooth" });
@@ -94,13 +97,13 @@ const NavHeader = () => {
         <div className="md:flex items-center gap-x-10">
           <div className="md:flex items-center gap-x-6">
             <span
-              className="cursor-pointer hover:underline hover:underline-offset-5"
+              className={hoverUnderline}
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
               Home
             </span>
             <span
-              className="cursor-pointer hover:underline hover:underline-offset-5"
+              className={hoverUnderline}
               onClick={() => {
                 const section = document.getElementById("about-me");
                 section?.scrollIntoView({ behavior: "smooth" });
@@ -109,7 +112,7 @@ const NavHeader = () => {
               About Me
             </span>
             <span
-              className="cursor-pointer hover:underline hover:underline-offset-5"
+              className={hoverUnderline}
               onClick={() => {
                 const section = document.getElementById("projects");
                 section?.scrollIntoView({ behavior: "smooth" });
@@ -118,7 +121,7 @@ const NavHeader = () => {
               Projects
             </span>
             <span
-              className="cursor-pointer hover:underline hover:underline-offset-5"
+              className={hoverUnderline}
               onClick={() => {
                 const section = document.getElementById("tech-skill");
                 section?.scrollIntoView({ behavior: "smooth" });

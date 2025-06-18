@@ -6,6 +6,9 @@ import { WordRotate } from '@/components/magicui/word-rotate';
 import { FaSquareInstagram } from "react-icons/fa6"
 
 const Footer = () => {
+
+	const hoverUnderline = 'relative cursor-pointer after:absolute after:left-0 after:mt-5 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-100 hover:after:w-full'
+
 	return (
 		<>
 			<section className='flex flex-col items-center gap-y-7 lg:gap-y-12'>
@@ -30,16 +33,16 @@ const Footer = () => {
 					</div>
 					<div className='flex flex-col gap-y-5'>
 						<h2 className='font-bold'>Quick Navigation</h2>
-						<div className='flex flex-col text-zinc-500 text-sm gap-y-2'>
+						<div className='flex flex-col items-start text-zinc-500 text-sm gap-y-2'>
 							<a
-								className="cursor-pointer hover:underline hover:underline-offset-5"
+								className={hoverUnderline}
 								href="/#home" onClick={e => {
 									e.preventDefault();
 									window.scrollTo({ top: 0, behavior: "smooth" });
 								}}>Home</a>
-							<a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#about-me">About Me</a>
-							<a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#projects">Projects</a>
-							<a className="cursor-pointer hover:underline hover:underline-offset-5" href="/#tech-stack">Tech Stack</a>
+							<a className={hoverUnderline} href="/#about-me">About Me</a>
+							<a className={hoverUnderline} href="/#projects">Projects</a>
+							<a className={hoverUnderline} href="/#tech-stack">Tech Stack</a>
 						</div>
 					</div>
 					<div className='flex flex-col gap-y-5'>
