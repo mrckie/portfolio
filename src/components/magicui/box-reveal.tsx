@@ -42,7 +42,7 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: duration ? duration : 0.5, delay: 2.4 }}
+        transition={{ duration: duration ? duration : 0.5, delay: 2.1 }}
       >
         {children}
       </motion.div>
@@ -54,7 +54,7 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: duration ? duration : 0.5, ease: 'easeInOut', delay: 2.4 }}
+        transition={{ duration: duration ? duration : 0.5, ease: 'easeInOut', delay: 2.1 }}
         style={{
           position: "absolute",
           top: 0,

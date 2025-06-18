@@ -20,7 +20,7 @@ function App() {
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <NavHeader />
         <SplashScreen />
-        <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-53 md:gap-y-53'>
+        <main className='relative px-8 lg:px-10 z-0 flex flex-col gap-y-30 py-30 lg:py-50 md:gap-y-53'>
           <Hero />
           <AboutMe />
           <Projects />

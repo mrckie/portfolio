@@ -3,7 +3,7 @@ import CustomCard from "@/components/ui/custom-card"
 
 const Projects = () => {
 	return (
-		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23" id="projects">
+		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23 scroll-section" id="projects">
 			<BlurFade inView >
 				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Specialized Projects</h1>
 			</BlurFade>

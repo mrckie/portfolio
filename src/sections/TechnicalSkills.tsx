@@ -156,7 +156,7 @@ const SkillsCard = ({
 const TechnialSkills = () => {
 
 	return (
-		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23 mb-40" id='tech-skill'>
+		<section className="flex flex-col items-start gap-y-18 lg:gap-y-23 mb-40 scroll-section" id='tech-skill'>
 			<BlurFade inView>
 				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>Technical Skills</h1>
 			</BlurFade>

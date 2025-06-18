@@ -101,7 +101,7 @@ const AboutMe = () => {
 	);
 
 	return (
-		<section className=" relative flex flex-col justify-center gap-y-23" id="about-me">
+		<section className=" relative flex flex-col justify-center gap-y-23 scroll-section" id="about-me">
 			<BlurFade inView >
 				<h1 className='text-xl font-semibold md:text-4xl md:font-bold'>About Me</h1>
 			</BlurFade>

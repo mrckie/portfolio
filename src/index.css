@@ -5,12 +5,10 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-  overflow-x: hidden;
 }
 
-.hover-underline {
-  
+.scroll-section {
+  scroll-margin-top: 100px;
 }
 
 @theme inline {

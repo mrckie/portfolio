@@ -22,7 +22,7 @@ const NavHeader = () => {
   return (
 
     <div className="w-full sticky top-0 z-50 border-b py-3 bg-background/60 backdrop-blur-sm px-7 lg:px-10">
-      <ScrollProgress className="lg:top-[65px] top-[52px]" />
+      <ScrollProgress className="lg:top-[59px] top-[52px]" />
       {/* 320px-768px breakpoint */}
       <div className="lg:hidden flex items-center justify-between">
         <Sheet>
@@ -130,10 +130,11 @@ const NavHeader = () => {
               Skills
             </span>
           </div>
+          
           <div className="md:flex items-center gap-x-6">
             <ContactForm
               button={
-                <ShimmerButton shimmerSize="0.1em" className="py-2 px-4 dark:text-white">
+                <ShimmerButton shimmerSize="0.1em" className="py-1.5 px-4 text-[15px] dark:text-white">
                   Contact Me
                 </ShimmerButton>
               }
