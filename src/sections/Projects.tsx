@@ -12,6 +12,8 @@ const Projects = () => {
 					<BlurFade inView >
 						<video
 							autoPlay
+							preload="none"
+							tabIndex={-1}
 							loop
 							muted
 							className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
@@ -46,6 +48,8 @@ const Projects = () => {
 					<BlurFade inView>
 						<video
 							autoPlay
+							preload="none"
+							tabIndex={-1}
 							loop
 							muted
 							className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 shadow-xl">
@@ -77,6 +81,8 @@ const Projects = () => {
 					<BlurFade inView>
 						<video
 							autoPlay
+							preload="none"
+							tabIndex={-1}
 							loop
 							muted
 							className="rounded-2xl shadow-xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
