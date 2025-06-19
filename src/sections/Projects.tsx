@@ -74,7 +74,7 @@ const Projects = () => {
 							'HTML',
 							'MySQL',
 						]}
-						link="https://github.com/mrckie/todo-app"
+						link="https://github.com/mrckie/electronic-inventory"
 					/>
 
 				</div>
