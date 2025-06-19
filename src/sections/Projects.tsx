@@ -53,24 +53,26 @@ const Projects = () => {
 							loop
 							muted
 							className="rounded-2xl duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 shadow-xl">
-							<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1749723509/b2kakrkdmyrhatbnfqwj.mp4' type="video/mp4" />
+							<source src='https://res.cloudinary.com/drotczcme/video/upload/q_auto/v1750320041/sbqgkq6n6bpc2modqlny.mp4' type="video/mp4" />
 						</video>
 					</BlurFade>
 					<CustomCard
-						title="To-do App"
-						description="A simple to-do app that can perform CRUD"
+						title="Electronic Inventory System"
+						description="An electronic inventory system designed to efficiently manage and track product stock levels, movements, and records in real-time."
 						features={[
-							'CRUD',
-							'Field validation',
-							'Marking when is done',
+							'Transaction logs and inventory movement history',
+							'User authentication and role-based access',
+							'Real-time stock tracking',
+							'Item categorization',
+							'Audit trail and admin logs for changes',
+							'Stock-in and stock-out tracking',
 						]}
 						techStacks={[
-							'Tailwind CSS',
-							'Laravel',
-							'React Javascript',
-							'Inertia.js',
-							'MariaDB',
-							'Vite',
+							'Vanilla Php',
+							'Bootstrap',
+							'CSS',
+							'HTML',
+							'MySQL',
 						]}
 						link="https://github.com/mrckie/todo-app"
 					/>
