@@ -72,7 +72,7 @@ export function ContactForm({ button }: { button: React.ReactNode }) {
 					</div>
 
 					<DialogFooter className="pt-10">
-						<Button className="cursor-pointer " type="submit" disabled>
+						<Button className="cursor-pointer " type="submit" disabled={isSending}>
 							{isSending ? 'Sending...' : 'Send a message'}
 						</Button>
 					</DialogFooter>
