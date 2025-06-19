@@ -17,7 +17,7 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 const NavHeader = () => {
   const { theme, setTheme } = useTheme();
 
-  const hoverUnderline = 'relative cursor-pointer after:absolute after:left-0 after:mt-6.5 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-100 hover:after:w-full'
+  const hoverUnderline = 'relative cursor-pointer after:absolute after:left-0 after:mt-6.5 after:h-[1.5px] after:w-0 after:bg-current after:transition-all after:duration-100 hover:after:w-full'
 
   return (
 
